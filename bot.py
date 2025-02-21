@@ -5,7 +5,7 @@ from aiogram.filters import Command
 import asyncio
 
 TOKEN = "8096351638:AAEGObv0GyM_pnZ_-OlI5ijOOREEezYEeS0"  # Вставьте сюда ваш токен
-bot = Bot(token=TOKEN, parse_mode="HTML")
+bot = Bot(token=TOKEN, default=types.DefaultBotProperties(parse_mode="HTML"))
 dp = Dispatcher()
 
 @dp.message(Command("all"))
